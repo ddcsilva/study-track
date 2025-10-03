@@ -1,0 +1,17 @@
+<app-summary-card
+  [type]="'goal'"
+  [label]="'Meta Mensal'"
+  [duration]="goal()"
+></app-summary-card>
+
+<app-summary-card
+  [type]="'done'"
+  [label]="'Concluído'"
+  [duration]="totalStudied()"
+></app-summary-card>
+
+<app-summary-card
+  [type]="'remaining'"
+  [label]="'Pendente'"
+  [duration]="remainingToGoal()"
+></app-summary-card>
