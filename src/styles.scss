@@ -1,7 +1,8 @@
 @use "@angular/material" as mat;
 @use "styles/theme-colors" as theme-colors;
-@use "styles/overrides/toolbar" as toolbar;
-@use "styles/custom.colors" as custom-colors;
+@use "styles/overrides/toolbar";
+@use "styles/custom.colors";
+
 html {
   @include mat.theme(
     (
@@ -21,10 +22,13 @@ body {
   color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 html,
 body {
   height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

@@ -1,16 +1,19 @@
 <app-summary-card
+  class="card"
   [type]="'goal'"
   [label]="'Meta Mensal'"
   [duration]="goal()"
 ></app-summary-card>
 
 <app-summary-card
+  class="card"
   [type]="'done'"
   [label]="'Concluído'"
   [duration]="totalStudied()"
 ></app-summary-card>
 
 <app-summary-card
+  class="card"
   [type]="'remaining'"
   [label]="'Pendente'"
   [duration]="remainingToGoal()"
